@@ -1,0 +1,13 @@
+{
+    "runOnSave.statusMessageTimeout": 3000,
+    "runOnSave.commands": [
+        {
+            "match": "\\.rego|tf$",
+            "isAsync": true,
+            "command": "make unit",
+            "runIn": "terminal",
+            "runningStatusMessage": "Running unit tests.",
+            "finishStatusMessage": "Completed running tests."
+        }
+    ],
+}
